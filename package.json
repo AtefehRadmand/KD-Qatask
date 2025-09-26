@@ -2,9 +2,20 @@
   "name": "kd-qatask",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtefehRadmand/KD-Qatask"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug"
   },
   "keywords": [],
   "author": "",
