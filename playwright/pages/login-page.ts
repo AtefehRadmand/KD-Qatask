@@ -1,10 +1,9 @@
 import { Page, Locator } from '@playwright/test';
+import { ConsentOverlayPage } from './consent-overlay-page';
 
-export class LoginPage {
-  private readonly page: Page;
-
+export class LoginPage extends ConsentOverlayPage {
   constructor(page: Page) {
-    this.page = page;
+    super(page);
   }
 
   async navigate(): Promise<void> {
@@ -24,55 +23,13 @@ export class LoginPage {
   }
 
   async isLoggedIn(): Promise<boolean> {
-    try {
-      const currentUrl = this.page.url();
-      
-      // Check if we're not on login page
-      if (currentUrl.includes('/login')) {
-        return false;
-      }
-      
-      // Check for user account elements
-      const userElements = [
-        'a[href*="/kundenkonto"]',
-        'a[href*="/account"]',
-        '.user-menu',
-        '.account-menu'
-      ];
-      
-      for (const selector of userElements) {
-        const element = this.page.locator(selector);
-        if (await element.isVisible()) {
-          return true;
-        }
-      }
-      
-      // If we're on homepage or other pages (not login), consider logged in
-      return currentUrl.includes('sofa.de') && !currentUrl.includes('/login');
-    } catch (error) {
-      return false;
-    }
+    const currentUrl = this.page.url();
+    return currentUrl.includes('sofa.de') && !currentUrl.includes('/login');
   }
 
   async hasErrors(): Promise<boolean> {
-    try {
-      const errorElements = this.page.locator('.formInput__error, .error-message, [class*="error"]');
-      return await errorElements.count() > 0;
-    } catch (error) {
-      return false;
-    }
+    const errorElements = this.page.locator('.formInput__error, .error-message, [class*="error"]');
+    return await errorElements.count() > 0;
   }
 
-  private async handleConsentOverlay(): Promise<void> {
-    try {
-      // Remove consent overlays with JavaScript
-      await this.page.evaluate(() => {
-        const overlays = document.querySelectorAll('.consentForm__overlay, .consentForm__container, .consentForm__details');
-        overlays.forEach(overlay => overlay.remove());
-      });
-      await this.page.waitForTimeout(1000);
-    } catch (error) {
-      // Continue if overlay handling fails
-    }
-  }
 }
