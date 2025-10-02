@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  playwright-tests:
+    build: .
+    container_name: playwright-test-runner
+    volumes:
+      # Mount test results to host for easy access
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
+      # Mount screenshots and videos
+      - ./screenshots:/app/screenshots
+      - ./videos:/app/videos
+    environment:
+      # Playwright configuration
+      - CI=true
+      - HEADLESS=true
+    command: npm test
+    # Alternative commands you can use:
+    # command: npm run test:headed  # Run with browser UI
+    # command: npm run test:debug   # Run in debug mode
+    # command: npm run test:ui      # Run with Playwright UI
+
+  # Service for running tests in headed mode (with browser UI)
+  playwright-headed:
+    build: .
+    container_name: playwright-headed
+    volumes:
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
+    environment:
+      - CI=false
+      - HEADLESS=false
+    command: npm run test:headed
+    # Uncomment the next line if you want to see the browser
+    # stdin_open: true
+    # tty: true
+
+  # Service for running specific test files
+  playwright-specific:
+    build: .
+    container_name: playwright-specific
+    volumes:
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
+    environment:
+      - CI=true
+      - HEADLESS=true
+    # Override command to run specific tests
+    # command: npx playwright test playwright/e2e/wishlist.spec.ts
+    command: npm test
