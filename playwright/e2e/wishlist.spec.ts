@@ -8,11 +8,13 @@ import { log } from 'console';
 test.describe('Wishlist Functionality', () => {
 
   //var productC = 5;
-  test('pick products', async({page})=> {
+  test('Pick 5 random products from category Ecksofas ', async({page})=> {
+
+    const category = 'Ecksofas'
 
     const CtgPage = new CategoryPage(page);
     //const wishlistPage = new WishlistPage(page);
-    await CtgPage.navigateToCategory('Ecksofas');
+    await CtgPage.navigateToCategory(category);
     await CtgPage.pickRandomProducts(5);
   } )
 
