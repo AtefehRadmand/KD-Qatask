@@ -1,6 +1,8 @@
 import { Page, Locator } from '@playwright/test';
 import { ConsentOverlayPage } from './consent-overlay-page';
 
+
+
 export class LoginPage extends ConsentOverlayPage {
   constructor(page: Page) {
     super(page);
@@ -13,13 +15,19 @@ export class LoginPage extends ConsentOverlayPage {
   }
 
   async fillForm(email: string, password: string): Promise<void> {
-    await this.page.locator('input[type="email"], input[name="email"]').first().fill(email);
-    await this.page.locator('input[type="password"], input[name="password"]').first().fill(password);
+    await this.page.waitForTimeout(2000);
+    await this.page.locator('input[data-testid="loginEmailInput"]').fill(email);
+    await this.page.locator('input[data-testid="loginPasswordInput"]').fill(password);
+    await this.handleConsentOverlay();
+    await this.page.waitForLoadState('networkidle'); 
   }
 
   async submit(): Promise<void> {
     await this.handleConsentOverlay();
-    await this.page.locator('[data-testid="login-submit"]').click();
+    await this.page.locator('[data-testid="login-submit"]').click();      
+    await this.page.waitForTimeout(2000);
+    await this.handleConsentOverlay();
+    await this.page.waitForLoadState('networkidle'); 
   }
 
   async isLoggedIn(): Promise<boolean> {

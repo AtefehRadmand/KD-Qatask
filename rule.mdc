@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+- priority for selector is data testId
+- keep it as simple as possible and human written style

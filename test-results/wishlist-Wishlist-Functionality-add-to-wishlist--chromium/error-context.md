@@ -1,0 +1,395 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Kopfzeile und Hauptnavigation überspringen - Zum Inhalt" [ref=e3] [cursor=pointer]:
+      - /url: "#mainContent"
+    - generic [ref=e4]:
+      - generic [ref=e11]:
+        - link "Sicher zahlen mit Paypal | 0%-Finanzierung* | auf Rechnung uvm." [ref=e13] [cursor=pointer]:
+          - /url: https://www.sofa.de/zahlungsarten
+          - img [ref=e14] [cursor=pointer]
+          - text: Sicher zahlen mit Paypal | 0%-Finanzierung* | auf Rechnung uvm.
+        - link "Trusted Shops zertifiziert" [ref=e16] [cursor=pointer]:
+          - /url: https://www.trustedshops.de/bewertung/info_X41E26A65EA788716D7AE9BB4D8DB18E6.html
+          - img [ref=e17] [cursor=pointer]
+          - text: Trusted Shops zertifiziert
+        - link "Ausgezeichnete Sofas" [ref=e19] [cursor=pointer]:
+          - /url: https://www.sofa.de/sofas-mit-guetesiegel
+          - img [ref=e20] [cursor=pointer]
+          - text: Ausgezeichnete Sofas
+      - generic [ref=e21]:
+        - link "Sofa.de - Zur Startseite" [ref=e24] [cursor=pointer]:
+          - /url: /
+          - img "Sofa.de - Zur Startseite" [ref=e26] [cursor=pointer]
+        - generic [ref=e42]:
+          - button "Suche starten" [ref=e43]:
+            - img "Suche starten" [ref=e44]
+          - textbox "Gib die Begriffe ein, nach denen Du suchst." [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Hotline
+            - link "Hotline 030 634183-330" [ref=e50] [cursor=pointer]:
+              - /url: tel:+4930634183330
+              - generic [ref=e53] [cursor=pointer]: 030 634183-330
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mein Konto
+            - link "Mein Konto Atiuser sDAa" [ref=e57] [cursor=pointer]:
+              - /url: /kundenkonto
+              - generic [ref=e60] [cursor=pointer]: Atiuser sDAa
+          - generic [ref=e62] [cursor=pointer]:
+            - generic [ref=e63] [cursor=pointer]: Wunschliste
+            - link "Wunschliste 2" [ref=e64] [cursor=pointer]:
+              - /url: /wunschliste
+              - generic [ref=e67] [cursor=pointer]: "2"
+          - generic [ref=e69]:
+            - generic [ref=e70]: Warenkorb
+            - link "Warenkorb 0" [ref=e71] [cursor=pointer]:
+              - /url: /warenkorb
+      - generic [ref=e74]:
+        - link "Ecksofas" [ref=e76] [cursor=pointer]:
+          - /url: /ecksofas?cr=header-kategorieeinstieg-ecksofas&row=na&col=na&ht=na&st=09052022&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e77] [cursor=pointer]
+          - img [ref=e78] [cursor=pointer]
+          - generic [ref=e79] [cursor=pointer]: Ecksofas
+        - link "Wohnlandschaften" [ref=e81] [cursor=pointer]:
+          - /url: /wohnlandschaften?cr=header-kategorieeinstieg-wohnlandschaften&row=na&col=na&ht=na&st=09052023&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e82] [cursor=pointer]
+          - img [ref=e83] [cursor=pointer]
+          - generic [ref=e84] [cursor=pointer]: Wohnlandschaften
+        - link "Schlafsofas" [ref=e86] [cursor=pointer]:
+          - /url: /schlafsofas?cr=header-kategorieeinstieg-schlafsofas&row=na&col=na&ht=na&st=09052024&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e87] [cursor=pointer]
+          - img [ref=e88] [cursor=pointer]
+          - generic [ref=e89] [cursor=pointer]: Schlafsofas
+        - link "Einzelsofas" [ref=e91] [cursor=pointer]:
+          - /url: /einzelsofas?cr=header-kategorieeinstieg-einzelsofas&row=na&col=na&ht=na&st=09052025&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e92] [cursor=pointer]
+          - img [ref=e93] [cursor=pointer]
+          - generic [ref=e94] [cursor=pointer]: Einzelsofas
+        - link "Sessel" [ref=e96] [cursor=pointer]:
+          - /url: /sessel-hocker?cr=header-kategorieeinstieg-sessel-hocker&row=na&col=na&ht=na&st=09052026&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e97] [cursor=pointer]
+          - img [ref=e98] [cursor=pointer]
+          - generic [ref=e99] [cursor=pointer]: Sessel
+        - link "Couchtische" [ref=e101] [cursor=pointer]:
+          - /url: /tische?cr=header-kategorieeinstieg-tische&row=na&col=na&ht=na&st=09052027&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e102] [cursor=pointer]
+          - img [ref=e103] [cursor=pointer]
+          - generic [ref=e104] [cursor=pointer]: Couchtische
+        - link "Accessoires" [ref=e106] [cursor=pointer]:
+          - /url: /alle-accessoires?cr=header-kategorieeinstieg-accessoires&row=na&col=na&ht=na&st=09052028&sz=all&prop=header-kategorieeinstieg&ca=permanent
+          - img [ref=e107] [cursor=pointer]
+          - img [ref=e108] [cursor=pointer]
+          - generic [ref=e109] [cursor=pointer]: Accessoires
+      - navigation "Hauptnavigation" [ref=e110]:
+        - list [ref=e114]:
+          - listitem [ref=e115]:
+            - link "Sofas" [ref=e117] [cursor=pointer]:
+              - /url: /alle-sofas
+              - generic [ref=e119] [cursor=pointer]: Sofas
+          - listitem [ref=e120]:
+            - link "Sessel & Hocker" [ref=e122] [cursor=pointer]:
+              - /url: /sessel-hocker
+              - generic [ref=e124] [cursor=pointer]: Sessel & Hocker
+          - listitem [ref=e125]:
+            - link "Tische" [ref=e127] [cursor=pointer]:
+              - /url: /tische
+              - generic [ref=e129] [cursor=pointer]: Tische
+          - listitem [ref=e130]:
+            - link "Accessoires" [ref=e132] [cursor=pointer]:
+              - /url: /alle-accessoires
+              - generic [ref=e134] [cursor=pointer]: Accessoires
+          - listitem [ref=e135]:
+            - link "Zubehör" [ref=e137] [cursor=pointer]:
+              - /url: /zubehoer
+              - generic [ref=e139] [cursor=pointer]: Zubehör
+          - listitem [ref=e140]:
+            - link "Marken & Serien" [ref=e142] [cursor=pointer]:
+              - /url: /marken
+              - generic [ref=e144] [cursor=pointer]: Marken & Serien
+          - listitem [ref=e145]:
+            - link "Beratung" [ref=e147] [cursor=pointer]:
+              - /url: /beratung
+              - generic [ref=e149] [cursor=pointer]: Beratung
+          - listitem [ref=e150]:
+            - link "Inspiration" [ref=e152] [cursor=pointer]:
+              - /url: /inspiration
+              - generic [ref=e154] [cursor=pointer]: Inspiration
+          - listitem [ref=e155]:
+            - link "% Deals" [ref=e157] [cursor=pointer]:
+              - /url: /deals?categorySortBy=saleDesc
+              - generic [ref=e159] [cursor=pointer]: "% Deals"
+  - main [ref=e166]:
+    - link "Inhalt überspringen - Zum Seitenende" [ref=e167] [cursor=pointer]:
+      - /url: "#footerContent"
+    - generic [ref=e170]:
+      - generic [ref=e171]:
+        - heading "Wunschliste" [level=1] [ref=e172]
+        - heading "Speichere Artikel für einen späteren Kauf auf Deiner Wunschliste. Du kannst hier die Artikel auf Deiner Wunschliste ansehen, Artikel löschen oder zum Warenkorb hinzufügen. Du kannst Deine Wunschliste mit der Druckfunktion auch ausdrucken." [level=3] [ref=e173]
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - textbox "Bitte gib eine korrekte Postleitzahl ein" [ref=e178]
+            - paragraph [ref=e179]: Bitte geben Sie Ihre Postleitzahl ein, um die Lieferzeit zu berechnen.
+          - generic [ref=e180]:
+            - img [ref=e182]
+            - textbox "Meine Wunschliste durchsuchen" [ref=e188]
+          - button "wishlist.button.label.printWishlist" [ref=e190] [cursor=pointer]:
+            - img [ref=e192] [cursor=pointer]
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - link [ref=e201] [cursor=pointer]:
+                - /url: /artikel/60406705
+                - img [ref=e202] [cursor=pointer]
+              - generic [ref=e203]: Artikel hinzugefügt am 02.10.2025
+            - button "Von der Wunschliste entfernen" [ref=e204] [cursor=pointer]:
+              - img [ref=e205] [cursor=pointer]
+            - generic [ref=e210]:
+              - generic [ref=e212]:
+                - generic [ref=e213]: Selsey
+                - generic [ref=e214]: Ecksofa
+                - generic [ref=e215]: "- mit Schlaffunktion -"
+                - generic [ref=e216]: Carnos
+              - list [ref=e219]:
+                - listitem [ref=e220]:
+                  - text: •
+                  - generic [ref=e221]: Reduziertes, abgerundetes Design
+                - listitem [ref=e222]:
+                  - text: •
+                  - generic [ref=e223]: Hoher Sitz- und Lomfort
+                - listitem [ref=e224]:
+                  - text: •
+                  - generic [ref=e225]: Inklusive Staumraum durch Bettkasten
+              - button "Artikeldetails" [ref=e227] [cursor=pointer]
+            - generic [ref=e228]:
+              - generic [ref=e232]:
+                - text: 1.169,
+                - generic [ref=e233]: "00"
+                - generic [ref=e234]: €
+              - generic [ref=e237]:
+                - button "Zurzeit nicht bestellbar" [disabled] [ref=e238]
+                - generic:
+                  - generic: • •
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - link [ref=e241] [cursor=pointer]:
+                - /url: /artikel/60408443
+                - img [ref=e242] [cursor=pointer]
+              - generic [ref=e243]: Artikel hinzugefügt am 01.10.2025
+            - button "Von der Wunschliste entfernen" [ref=e244] [cursor=pointer]:
+              - img [ref=e245] [cursor=pointer]
+            - generic [ref=e250]:
+              - generic [ref=e252]:
+                - generic [ref=e253]: meinSofa
+                - generic [ref=e254]: Ecksofa
+                - generic [ref=e255]: Jenny
+              - list [ref=e258]:
+                - listitem [ref=e259]:
+                  - text: •
+                  - generic [ref=e260]: Bezug aus hochwertigem Velours
+                - listitem [ref=e261]:
+                  - text: •
+                  - generic [ref=e262]: Hoher Sitzkomfort durch Kaltschaumpolsterung
+                - listitem [ref=e263]:
+                  - text: •
+                  - generic [ref=e264]: In verschiedenen Farben und Ausführungen erhältlich
+              - button "Artikeldetails" [ref=e266] [cursor=pointer]
+            - generic [ref=e267]:
+              - generic [ref=e271]:
+                - text: 3.099,
+                - generic [ref=e272]: "00"
+                - generic [ref=e273]: €
+              - generic [ref=e276]:
+                - button "Zurzeit nicht bestellbar" [disabled] [ref=e277]
+                - generic:
+                  - generic: • •
+        - generic [ref=e278]:
+          - link "Weiter einkaufen" [ref=e279] [cursor=pointer]:
+            - /url: /
+          - button "Alle Artikel in den Warenkorb" [disabled] [ref=e280]
+  - contentinfo [ref=e281]:
+    - list [ref=e282]:
+      - listitem [ref=e283]:
+        - generic [ref=e285]:
+          - paragraph [ref=e288]:
+            - text: Jetzt zum Newsletter anmelden und
+            - strong [ref=e289]: 5% Gutschein*
+            - text: sichern!
+          - generic [ref=e291]:
+            - textbox "footer.newsletter.emailAriaLabel" [ref=e294]
+            - button "Jetzt anmelden" [ref=e296] [cursor=pointer]
+            - generic [ref=e297]:
+              - generic [ref=e298]: Abmeldung jederzeit möglich!
+              - link "Datenschutzbestimmungen" [ref=e299] [cursor=pointer]:
+                - /url: /datenschutz
+                - generic [ref=e300] [cursor=pointer]: Datenschutzbestimmungen
+    - generic [ref=e301]:
+      - list [ref=e303]:
+        - listitem [ref=e304]:
+          - img "Bezahlen mit Paypal" [ref=e306]
+        - listitem [ref=e307]:
+          - img "Kauf auf Rechnung" [ref=e309]
+        - listitem [ref=e310]:
+          - img "Visa Card" [ref=e312]
+        - listitem [ref=e313]:
+          - img "Mastercard" [ref=e315]
+        - listitem [ref=e316]:
+          - img "Finanzierung mit der Targo Bank" [ref=e318]
+        - listitem
+        - listitem [ref=e319]:
+          - img "Versand mit DHL" [ref=e321]
+        - listitem [ref=e322]:
+          - img "Speditionslieferung mit Rhenus" [ref=e324]
+      - generic [ref=e325]:
+        - generic [ref=e327]:
+          - navigation "Fußzeilen Navigation" [ref=e328]:
+            - generic [ref=e329]:
+              - heading "Fragen & Antworten" [level=6] [ref=e330]
+              - list [ref=e331]:
+                - listitem [ref=e332] [cursor=pointer]:
+                  - link "FAQ - Häufige Fragen" [ref=e333] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e334] [cursor=pointer]:
+                  - link "Telefonberatung" [ref=e335] [cursor=pointer]:
+                    - /url: /telefonberatung
+                - listitem [ref=e336] [cursor=pointer]:
+                  - link "Best-Preis-Garantie" [ref=e337] [cursor=pointer]:
+                    - /url: /best-preis-garantie
+                - listitem [ref=e338] [cursor=pointer]:
+                  - link "Zahlarten" [ref=e339] [cursor=pointer]:
+                    - /url: /zahlungsarten
+                - listitem [ref=e340] [cursor=pointer]:
+                  - link "0%-Finanzierung" [ref=e341] [cursor=pointer]:
+                    - /url: /finanzierung
+                - listitem [ref=e342] [cursor=pointer]:
+                  - link "Versand & Lieferung" [ref=e343] [cursor=pointer]:
+                    - /url: /faq#faq-kapitel-lieferung-versand
+                - listitem [ref=e344] [cursor=pointer]:
+                  - link "Widerruf" [ref=e345] [cursor=pointer]:
+                    - /url: /widerruf
+                - listitem [ref=e346] [cursor=pointer]:
+                  - link "Entsorgung" [ref=e347] [cursor=pointer]:
+                    - /url: /entsorgung
+            - generic [ref=e348]:
+              - heading "Entdecken & Sparen" [level=6] [ref=e349]
+              - list [ref=e350]:
+                - listitem [ref=e351] [cursor=pointer]:
+                  - link "Über uns" [ref=e352] [cursor=pointer]:
+                    - /url: /ueber-uns
+                - listitem [ref=e353] [cursor=pointer]:
+                  - link "Rabatte & Aktionen" [ref=e354] [cursor=pointer]:
+                    - /url: /rabatte
+                - listitem [ref=e355] [cursor=pointer]:
+                  - link "Studentenrabatt" [ref=e356] [cursor=pointer]:
+                    - /url: /studentenrabatt
+                - listitem [ref=e357] [cursor=pointer]:
+                  - link "Kundenerfahrungen" [ref=e358] [cursor=pointer]:
+                    - /url: /erfahrungen
+                - listitem [ref=e359] [cursor=pointer]:
+                  - link "Ratgeber" [ref=e360] [cursor=pointer]:
+                    - /url: /beratung
+                - listitem [ref=e361] [cursor=pointer]:
+                  - link "Inspirationen" [ref=e362] [cursor=pointer]:
+                    - /url: /inspiration
+                - listitem [ref=e363] [cursor=pointer]:
+                  - link "Kooperationen" [ref=e364] [cursor=pointer]:
+                    - /url: /mit-uns-arbeiten
+            - generic [ref=e365]:
+              - heading "Sortiment" [level=6] [ref=e366]
+              - list [ref=e367]:
+                - listitem [ref=e368] [cursor=pointer]:
+                  - link "Marken" [ref=e369] [cursor=pointer]:
+                    - /url: /marken
+                - listitem [ref=e370] [cursor=pointer]:
+                  - link "Serien" [ref=e371] [cursor=pointer]:
+                    - /url: /serien
+                - listitem [ref=e372] [cursor=pointer]:
+                  - link "Ecksofas" [ref=e373] [cursor=pointer]:
+                    - /url: /ecksofas
+                - listitem [ref=e374] [cursor=pointer]:
+                  - link "Big Sofas" [ref=e375] [cursor=pointer]:
+                    - /url: /big-sofas
+                - listitem [ref=e376] [cursor=pointer]:
+                  - link "Relaxsessel" [ref=e377] [cursor=pointer]:
+                    - /url: /relaxsessel
+                - listitem [ref=e378] [cursor=pointer]:
+                  - link "Polsterhocker" [ref=e379] [cursor=pointer]:
+                    - /url: /hocker
+                - listitem [ref=e380] [cursor=pointer]:
+                  - link "Couchtische" [ref=e381] [cursor=pointer]:
+                    - /url: /couchtische
+                - listitem [ref=e382] [cursor=pointer]:
+                  - link "Kuscheldecken" [ref=e383] [cursor=pointer]:
+                    - /url: /decken
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - generic [ref=e387]: Hast Du Fragen oder ein Service-Anliegen?
+              - generic [ref=e388]: Sofa.de hilft Dir gerne!
+            - link "Zum Servicecenter" [ref=e390] [cursor=pointer]:
+              - /url: /service
+        - list [ref=e392]:
+          - listitem:
+            - link:
+              - /url: /auszeichnungen
+          - listitem [ref=e393]:
+            - link "Mehr Infos unter sofa.de/auszeichnungen - n-tv, Deutschlands beste Onlineshops 2025, Polstermöbel (ohne Filalnetz), Preisträger Platz 1-3, Kundenurteil zu 14 Anbietern, www.disq.de, Deutsches Institut für Service-Qualität GmbH & Co KG" [ref=e394] [cursor=pointer]:
+              - /url: /auszeichnungen
+              - img "Mehr Infos unter sofa.de/auszeichnungen - n-tv, Deutschlands beste Onlineshops 2025, Polstermöbel (ohne Filalnetz), Preisträger Platz 1-3, Kundenurteil zu 14 Anbietern, www.disq.de, Deutsches Institut für Service-Qualität GmbH & Co KG" [ref=e395] [cursor=pointer]
+          - listitem [ref=e396]:
+            - link "Mehr Infos unter sofa.de/auszeichnungen - 1. Frauen Volleyball Bundesliga, SC Portdam, Offizieller Partner" [ref=e397] [cursor=pointer]:
+              - /url: /auszeichnungen
+              - img "Mehr Infos unter sofa.de/auszeichnungen - 1. Frauen Volleyball Bundesliga, SC Portdam, Offizieller Partner" [ref=e398] [cursor=pointer]
+          - listitem:
+            - link:
+              - /url: /auszeichnungen
+      - generic [ref=e400]:
+        - img "Sofa.de Logo" [ref=e402]
+        - list [ref=e403]:
+          - listitem [ref=e404] [cursor=pointer]:
+            - link "Impressum" [ref=e405] [cursor=pointer]:
+              - /url: /impressum
+          - listitem [ref=e406] [cursor=pointer]:
+            - link "AGB" [ref=e407] [cursor=pointer]:
+              - /url: /agb
+          - listitem [ref=e408] [cursor=pointer]:
+            - link "Datenschutz" [ref=e409] [cursor=pointer]:
+              - /url: /datenschutz
+          - listitem [ref=e410] [cursor=pointer]:
+            - link "Hinweisgeber" [ref=e411] [cursor=pointer]:
+              - /url: /hinweisgeber
+          - listitem [ref=e412] [cursor=pointer]:
+            - link "Barrierefreiheitserklärung" [ref=e413] [cursor=pointer]:
+              - /url: /barrierefreiheitserklaerung
+          - listitem [ref=e414] [cursor=pointer]:
+            - generic [ref=e415] [cursor=pointer]: Cookie-Einstellungen
+        - list [ref=e417]:
+          - listitem [ref=e418]:
+            - link "facebook icon" [ref=e419] [cursor=pointer]:
+              - /url: https://www.facebook.com/Sofade-104025024861721
+              - img "facebook icon" [ref=e420] [cursor=pointer]
+          - listitem [ref=e421]:
+            - link "instagram icon" [ref=e422] [cursor=pointer]:
+              - /url: http://www.instagram.com/_sofa.de_
+              - img "instagram icon" [ref=e423] [cursor=pointer]
+          - listitem [ref=e424]:
+            - link "pinterest icon" [ref=e425] [cursor=pointer]:
+              - /url: http://www.pinterest.com/sofade/
+              - img "pinterest icon" [ref=e426] [cursor=pointer]
+          - listitem [ref=e427]:
+            - link "youtube icon" [ref=e428] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCkz2qV1QZtoCeOQxHweUubA/
+              - img "youtube icon" [ref=e429] [cursor=pointer]
+        - generic [ref=e434]:
+          - button "Trusted Shops Gütesiegel 4,15 Gut Käuferschutz" [ref=e435] [cursor=pointer]:
+            - generic [ref=e436] [cursor=pointer]:
+              - img "Trusted Shops Gütesiegel" [ref=e438] [cursor=pointer]
+              - generic [ref=e439] [cursor=pointer]:
+                - paragraph [ref=e443] [cursor=pointer]:
+                  - generic [ref=e444] [cursor=pointer]: 4,15
+                - paragraph [ref=e445] [cursor=pointer]: Gut
+            - paragraph [ref=e447] [cursor=pointer]: Käuferschutz
+          - button "Menü" [ref=e448] [cursor=pointer]
+```
