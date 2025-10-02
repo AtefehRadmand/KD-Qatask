@@ -7,11 +7,15 @@ This directory contains end-to-end tests for the SOFA.de using Playwright.
 ### Page Objects (`pages/`)
 
 - `registration-page.ts` - Page object for the user registration page
-- `test-data-generator.ts` - Utility for generating random test data
+- `login-page.ts` - Page object for user login
+- `category-page` - Page object for category page and picking product from desired category
+- `wishlist-page` - Page object for wishlist
 
 ### Test Files (`e2e/`)
 
 - `registration.spec.ts` - Test scenarios for user registration
+- `login.spec.ts` - Test scenarios for user login
+- `wishlist.spec.ts` - Test scenarios for working with wishlist
 
 ## Test Scenarios
 
@@ -27,8 +31,8 @@ This directory contains end-to-end tests for the SOFA.de using Playwright.
 
 ### Add to wishlist
 
-1. **Select random products** - selects random products from a category 
-2. **Add to wishlist** - add selected products to wishlist and verifies is added 
+1. **Select random products** - selects random products from a category
+2. **Add to wishlist** - add selected products to wishlist and verifies is added
 
 ## Running Tests
 
@@ -67,6 +71,3 @@ The tests are configured in `playwright.config.ts` with:
 - Multiple browser support (Chrome, Firefox, Safari)
 - Screenshots and videos on failure
 - Trace collection for debugging
-
-
-
